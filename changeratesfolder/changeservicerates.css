@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #edeef1;
+  font-family: "Poppins", sans-serif;
+  min-height: 792px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  position: relative;
+  min-height: 792px;
+  width: 100%;
+}
+.platformFees-wrapper {
+  min-width: 900px;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem 3rem;
+  box-shadow: 0 6px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.platformFees-wrapper h2 {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  color: #574747;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.platformFees-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon img {
+  width: 40px;
+}
+
+.platformFees-inputs label {
+  color: #5d7079;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* CHOOSE CURRENCY CSS */
+
+.platformFees-input form {
+  margin: 40px 0 20px 0;
+}
+
+form :where(input, button) {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+form input {
+  height: 50px;
+  width: 23em;
+  border-radius: 20px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+
+form input:focus {
+  padding: 0 14px;
+  border: 2px solid #675afe;
+}
+
+form .platform-fees {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.form-control img {
+  max-width: 30px;
+}
+
+.platform-fees .icon {
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+form button {
+  height: 52px;
+  color: #fff;
+  background: #675afe;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #897efd;
+}

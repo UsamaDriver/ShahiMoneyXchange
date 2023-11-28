@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 23px 26px;
+  font-size: 18px;
+  background-color: rgb(222, 206, 238);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 23px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 300ms;
+}
+.logo:hover {
+  color: rgb(152, 82, 233);
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  color: rgb(152, 82, 233);
+}
+
+nav ul {
+  display: flex;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 23px 0;
+}
+
+.container form {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container form label {
+  font-size: 25px;
+  font-weight: 600;
+}
+.container form input[type="number"],
+select,
+label {
+  font-size: 20px;
+  margin-bottom: 23px;
+  max-width: 23vw;
+}
+
+.btn {
+  width: 144px;
+  padding: 8px 5px;
+  background: chartreuse;
+  border: 2px solid chartreuse;
+  color: currentcolor;
+  font-weight: 700;
+  font-size: 19px;
+  position: relative;
+  left: 8rem;
+  margin: 25px 0;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.output {
+  display: none;
+}
+
+.output h2 {
+  margin: 23px 0;
+}
+
+.output table {
+  min-width: 62rem;
+  text-align: center;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 25px;
+    justify-content: center;
+  }
+
+  nav {
+    flex-direction: column;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  nav ul {
+    font-size: 20px;
+    justify-content: space-evenly;
+    margin-top: 25px;
+  }
+
+  nav ul li {
+    margin: 5px 3px;
+  }
+
+  .container {
+    max-width: 95vw;
+  }
+  .container h1 {
+    font-size: 35px;
+  }
+
+  .container form input[type="number"],
+  select,
+  label {
+    font-size: 24px;
+    margin-bottom: 26px;
+    max-width: 83vw;
+  }
+
+  .output table {
+    min-width: 36rem;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+  }
+}
